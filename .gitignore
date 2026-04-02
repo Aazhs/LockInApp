@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+coverage
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+.lockin-email-scheduler.json
+

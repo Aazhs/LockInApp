@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D80BC032F7E7E9D00A802DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BC022F7E7E9D00A802DC /* AppDelegate.swift */; };
+		3D80BC052F7E7E9D00A802DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BC042F7E7E9D00A802DC /* SceneDelegate.swift */; };
+		3D80BC082F7E7E9D00A802DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC062F7E7E9D00A802DC /* LaunchScreen.storyboard */; };
+		3D80BC0B2F7E7E9D00A802DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC092F7E7E9D00A802DC /* Main.storyboard */; };
+		3D80BC142F7E7E9D00A802DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BC132F7E7E9D00A802DC /* AppDelegate.swift */; };
+		3D80BC172F7E7E9D00A802DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC152F7E7E9D00A802DC /* Main.storyboard */; };
+		3D80BC1E2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3D80BC1D2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D80BC282F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3D80BC272F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D80BC2D2F7E7E9D00A802DC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF22F7E7E9C00A802DC /* Main.html */; };
+		3D80BC2E2F7E7E9D00A802DC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF22F7E7E9C00A802DC /* Main.html */; };
+		3D80BC2F2F7E7E9D00A802DC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF42F7E7E9C00A802DC /* Icon.png */; };
+		3D80BC302F7E7E9D00A802DC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF42F7E7E9C00A802DC /* Icon.png */; };
+		3D80BC312F7E7E9D00A802DC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF52F7E7E9C00A802DC /* Style.css */; };
+		3D80BC322F7E7E9D00A802DC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF52F7E7E9C00A802DC /* Style.css */; };
+		3D80BC332F7E7E9D00A802DC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF62F7E7E9C00A802DC /* Script.js */; };
+		3D80BC342F7E7E9D00A802DC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF62F7E7E9C00A802DC /* Script.js */; };
+		3D80BC352F7E7E9D00A802DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BBF72F7E7E9C00A802DC /* ViewController.swift */; };
+		3D80BC362F7E7E9D00A802DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BBF72F7E7E9C00A802DC /* ViewController.swift */; };
+		3D80BC372F7E7E9D00A802DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF82F7E7E9D00A802DC /* Assets.xcassets */; };
+		3D80BC382F7E7E9D00A802DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BBF82F7E7E9D00A802DC /* Assets.xcassets */; };
+		3D80BC392F7E7E9D00A802DC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BBFA2F7E7E9D00A802DC /* SafariWebExtensionHandler.swift */; };
+		3D80BC3A2F7E7E9D00A802DC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80BBFA2F7E7E9D00A802DC /* SafariWebExtensionHandler.swift */; };
+		3D80BC4F2F7E7E9E00A802DC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC4C2F7E7E9E00A802DC /* background.js */; };
+		3D80BC502F7E7E9E00A802DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC4D2F7E7E9E00A802DC /* README.md */; };
+		3D80BC512F7E7E9E00A802DC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC4E2F7E7E9E00A802DC /* manifest.json */; };
+		3D80BC522F7E7E9E00A802DC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC4C2F7E7E9E00A802DC /* background.js */; };
+		3D80BC532F7E7E9E00A802DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC4D2F7E7E9E00A802DC /* README.md */; };
+		3D80BC542F7E7E9E00A802DC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D80BC4E2F7E7E9E00A802DC /* manifest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D80BC1F2F7E7E9D00A802DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D80BBEC2F7E7E9C00A802DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D80BC1C2F7E7E9D00A802DC;
+			remoteInfo = "LockIn Usage Tracker (Safari) Extension (iOS)";
+		};
+		3D80BC292F7E7E9D00A802DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D80BBEC2F7E7E9C00A802DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D80BC262F7E7E9D00A802DC;
+			remoteInfo = "LockIn Usage Tracker (Safari) Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D80BC402F7E7E9D00A802DC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D80BC1E2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC472F7E7E9D00A802DC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D80BC282F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D80BBF32F7E7E9C00A802DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		3D80BBF42F7E7E9C00A802DC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3D80BBF52F7E7E9C00A802DC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		3D80BBF62F7E7E9C00A802DC /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		3D80BBF72F7E7E9C00A802DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D80BBF82F7E7E9D00A802DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D80BBFA2F7E7E9D00A802DC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		3D80BBFF2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LockIn Usage Tracker (Safari).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D80BC022F7E7E9D00A802DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D80BC042F7E7E9D00A802DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D80BC072F7E7E9D00A802DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D80BC0A2F7E7E9D00A802DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D80BC0C2F7E7E9D00A802DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D80BC112F7E7E9D00A802DC /* LockIn Usage Tracker (Safari).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LockIn Usage Tracker (Safari).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D80BC132F7E7E9D00A802DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D80BC162F7E7E9D00A802DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D80BC182F7E7E9D00A802DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D80BC1D2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LockIn Usage Tracker (Safari) Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D80BC222F7E7E9D00A802DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D80BC272F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LockIn Usage Tracker (Safari) Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D80BC2C2F7E7E9D00A802DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D80BC4C2F7E7E9E00A802DC /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../apps/safari-extension/background.js"; sourceTree = "<group>"; };
+		3D80BC4D2F7E7E9E00A802DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../apps/safari-extension/README.md"; sourceTree = "<group>"; };
+		3D80BC4E2F7E7E9E00A802DC /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../apps/safari-extension/manifest.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D80BBFC2F7E7E9D00A802DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC0E2F7E7E9D00A802DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC1A2F7E7E9D00A802DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC242F7E7E9D00A802DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D80BBEB2F7E7E9C00A802DC = {
+			isa = PBXGroup;
+			children = (
+				3D80BBF02F7E7E9C00A802DC /* Shared (App) */,
+				3D80BBF92F7E7E9D00A802DC /* Shared (Extension) */,
+				3D80BC012F7E7E9D00A802DC /* iOS (App) */,
+				3D80BC122F7E7E9D00A802DC /* macOS (App) */,
+				3D80BC212F7E7E9D00A802DC /* iOS (Extension) */,
+				3D80BC2B2F7E7E9D00A802DC /* macOS (Extension) */,
+				3D80BC002F7E7E9D00A802DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D80BBF02F7E7E9C00A802DC /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BBF72F7E7E9C00A802DC /* ViewController.swift */,
+				3D80BBF82F7E7E9D00A802DC /* Assets.xcassets */,
+				3D80BBF12F7E7E9C00A802DC /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		3D80BBF12F7E7E9C00A802DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BBF22F7E7E9C00A802DC /* Main.html */,
+				3D80BBF42F7E7E9C00A802DC /* Icon.png */,
+				3D80BBF52F7E7E9C00A802DC /* Style.css */,
+				3D80BBF62F7E7E9C00A802DC /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D80BBF92F7E7E9D00A802DC /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BC4B2F7E7E9E00A802DC /* Resources */,
+				3D80BBFA2F7E7E9D00A802DC /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		3D80BC002F7E7E9D00A802DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BBFF2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari).app */,
+				3D80BC112F7E7E9D00A802DC /* LockIn Usage Tracker (Safari).app */,
+				3D80BC1D2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */,
+				3D80BC272F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D80BC012F7E7E9D00A802DC /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BC022F7E7E9D00A802DC /* AppDelegate.swift */,
+				3D80BC042F7E7E9D00A802DC /* SceneDelegate.swift */,
+				3D80BC062F7E7E9D00A802DC /* LaunchScreen.storyboard */,
+				3D80BC092F7E7E9D00A802DC /* Main.storyboard */,
+				3D80BC0C2F7E7E9D00A802DC /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		3D80BC122F7E7E9D00A802DC /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BC132F7E7E9D00A802DC /* AppDelegate.swift */,
+				3D80BC152F7E7E9D00A802DC /* Main.storyboard */,
+				3D80BC182F7E7E9D00A802DC /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		3D80BC212F7E7E9D00A802DC /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BC222F7E7E9D00A802DC /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		3D80BC2B2F7E7E9D00A802DC /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BC2C2F7E7E9D00A802DC /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		3D80BC4B2F7E7E9E00A802DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D80BC4C2F7E7E9E00A802DC /* background.js */,
+				3D80BC4D2F7E7E9E00A802DC /* README.md */,
+				3D80BC4E2F7E7E9E00A802DC /* manifest.json */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D80BBFE2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D80BC412F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) (iOS)" */;
+			buildPhases = (
+				3D80BBFB2F7E7E9D00A802DC /* Sources */,
+				3D80BBFC2F7E7E9D00A802DC /* Frameworks */,
+				3D80BBFD2F7E7E9D00A802DC /* Resources */,
+				3D80BC402F7E7E9D00A802DC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D80BC202F7E7E9D00A802DC /* PBXTargetDependency */,
+			);
+			name = "LockIn Usage Tracker (Safari) (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "LockIn Usage Tracker (Safari) (iOS)";
+			productReference = 3D80BBFF2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari).app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D80BC102F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D80BC482F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) (macOS)" */;
+			buildPhases = (
+				3D80BC0D2F7E7E9D00A802DC /* Sources */,
+				3D80BC0E2F7E7E9D00A802DC /* Frameworks */,
+				3D80BC0F2F7E7E9D00A802DC /* Resources */,
+				3D80BC472F7E7E9D00A802DC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D80BC2A2F7E7E9D00A802DC /* PBXTargetDependency */,
+			);
+			name = "LockIn Usage Tracker (Safari) (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "LockIn Usage Tracker (Safari) (macOS)";
+			productReference = 3D80BC112F7E7E9D00A802DC /* LockIn Usage Tracker (Safari).app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D80BC1C2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D80BC3D2F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) Extension (iOS)" */;
+			buildPhases = (
+				3D80BC192F7E7E9D00A802DC /* Sources */,
+				3D80BC1A2F7E7E9D00A802DC /* Frameworks */,
+				3D80BC1B2F7E7E9D00A802DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LockIn Usage Tracker (Safari) Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "LockIn Usage Tracker (Safari) Extension (iOS)";
+			productReference = 3D80BC1D2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3D80BC262F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D80BC442F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) Extension (macOS)" */;
+			buildPhases = (
+				3D80BC232F7E7E9D00A802DC /* Sources */,
+				3D80BC242F7E7E9D00A802DC /* Frameworks */,
+				3D80BC252F7E7E9D00A802DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LockIn Usage Tracker (Safari) Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "LockIn Usage Tracker (Safari) Extension (macOS)";
+			productReference = 3D80BC272F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D80BBEC2F7E7E9C00A802DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					3D80BBFE2F7E7E9D00A802DC = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					3D80BC102F7E7E9D00A802DC = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					3D80BC1C2F7E7E9D00A802DC = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					3D80BC262F7E7E9D00A802DC = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 3D80BBEF2F7E7E9C00A802DC /* Build configuration list for PBXProject "LockIn Usage Tracker (Safari)" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D80BBEB2F7E7E9C00A802DC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3D80BC002F7E7E9D00A802DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D80BBFE2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) (iOS) */,
+				3D80BC102F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) (macOS) */,
+				3D80BC1C2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension (iOS) */,
+				3D80BC262F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D80BBFD2F7E7E9D00A802DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC2F2F7E7E9D00A802DC /* Icon.png in Resources */,
+				3D80BC082F7E7E9D00A802DC /* LaunchScreen.storyboard in Resources */,
+				3D80BC2D2F7E7E9D00A802DC /* Main.html in Resources */,
+				3D80BC332F7E7E9D00A802DC /* Script.js in Resources */,
+				3D80BC372F7E7E9D00A802DC /* Assets.xcassets in Resources */,
+				3D80BC0B2F7E7E9D00A802DC /* Main.storyboard in Resources */,
+				3D80BC312F7E7E9D00A802DC /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC0F2F7E7E9D00A802DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC302F7E7E9D00A802DC /* Icon.png in Resources */,
+				3D80BC322F7E7E9D00A802DC /* Style.css in Resources */,
+				3D80BC172F7E7E9D00A802DC /* Main.storyboard in Resources */,
+				3D80BC342F7E7E9D00A802DC /* Script.js in Resources */,
+				3D80BC382F7E7E9D00A802DC /* Assets.xcassets in Resources */,
+				3D80BC2E2F7E7E9D00A802DC /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC1B2F7E7E9D00A802DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC532F7E7E9E00A802DC /* README.md in Resources */,
+				3D80BC542F7E7E9E00A802DC /* manifest.json in Resources */,
+				3D80BC522F7E7E9E00A802DC /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC252F7E7E9D00A802DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC502F7E7E9E00A802DC /* README.md in Resources */,
+				3D80BC512F7E7E9E00A802DC /* manifest.json in Resources */,
+				3D80BC4F2F7E7E9E00A802DC /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D80BBFB2F7E7E9D00A802DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC352F7E7E9D00A802DC /* ViewController.swift in Sources */,
+				3D80BC032F7E7E9D00A802DC /* AppDelegate.swift in Sources */,
+				3D80BC052F7E7E9D00A802DC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC0D2F7E7E9D00A802DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC362F7E7E9D00A802DC /* ViewController.swift in Sources */,
+				3D80BC142F7E7E9D00A802DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC192F7E7E9D00A802DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC392F7E7E9D00A802DC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80BC232F7E7E9D00A802DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D80BC3A2F7E7E9D00A802DC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D80BC202F7E7E9D00A802DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D80BC1C2F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension (iOS) */;
+			targetProxy = 3D80BC1F2F7E7E9D00A802DC /* PBXContainerItemProxy */;
+		};
+		3D80BC2A2F7E7E9D00A802DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D80BC262F7E7E9D00A802DC /* LockIn Usage Tracker (Safari) Extension (macOS) */;
+			targetProxy = 3D80BC292F7E7E9D00A802DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D80BBF22F7E7E9C00A802DC /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D80BBF32F7E7E9C00A802DC /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		3D80BC062F7E7E9D00A802DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D80BC072F7E7E9D00A802DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D80BC092F7E7E9D00A802DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D80BC0A2F7E7E9D00A802DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D80BC152F7E7E9D00A802DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D80BC162F7E7E9D00A802DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D80BC3B2F7E7E9D00A802DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D80BC3C2F7E7E9D00A802DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3D80BC3E2F7E7E9D00A802DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari) Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D80BC3F2F7E7E9D00A802DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari) Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D80BC422F7E7E9D00A802DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D80BC432F7E7E9D00A802DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D80BC452F7E7E9D00A802DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari) Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3D80BC462F7E7E9D00A802DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari) Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-.Extension";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari) Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3D80BC492F7E7E9D00A802DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari)";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3D80BC4A2F7E7E9D00A802DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LockIn Usage Tracker (Safari)";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.LockIn-Usage-Tracker--Safari-";
+				PRODUCT_NAME = "LockIn Usage Tracker (Safari)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D80BBEF2F7E7E9C00A802DC /* Build configuration list for PBXProject "LockIn Usage Tracker (Safari)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D80BC3B2F7E7E9D00A802DC /* Debug */,
+				3D80BC3C2F7E7E9D00A802DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D80BC3D2F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D80BC3E2F7E7E9D00A802DC /* Debug */,
+				3D80BC3F2F7E7E9D00A802DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D80BC412F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D80BC422F7E7E9D00A802DC /* Debug */,
+				3D80BC432F7E7E9D00A802DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D80BC442F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D80BC452F7E7E9D00A802DC /* Debug */,
+				3D80BC462F7E7E9D00A802DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D80BC482F7E7E9D00A802DC /* Build configuration list for PBXNativeTarget "LockIn Usage Tracker (Safari) (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D80BC492F7E7E9D00A802DC /* Debug */,
+				3D80BC4A2F7E7E9D00A802DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D80BBEC2F7E7E9C00A802DC /* Project object */;
+}

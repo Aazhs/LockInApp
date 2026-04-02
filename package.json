@@ -1,0 +1,23 @@
+{
+  "name": "lockinapp",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @lockin/shared && npm run build -w @lockin/collector-service",
+    "test": "npm run test -w @lockin/shared && npm run test -w @lockin/collector-service",
+    "dev:collector": "npm run dev -w @lockin/collector-service",
+    "dev:collector-mail": "sh -c 'npm run dev:collector & COLLECTOR_PID=$!; npm run schedule; kill $COLLECTOR_PID'",
+    "summarize": "npm run summarize -w @lockin/collector-service --",
+    "schedule": "npm run schedule -w @lockin/collector-service --"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

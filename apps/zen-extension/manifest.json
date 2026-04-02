@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "LockIn Usage Tracker (Zen)",
+  "version": "0.1.0",
+  "description": "Tracks active website usage and forwards events to local LockIn collector.",
+  "permissions": [
+    "tabs",
+    "idle",
+    "history",
+    "storage",
+    "<all_urls>",
+    "http://127.0.0.1:4317/*",
+    "http://localhost:4317/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "lockin-usage@local"
+    }
+  }
+}

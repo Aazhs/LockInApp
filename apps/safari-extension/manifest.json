@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "LockIn Usage Tracker (Safari)",
+  "version": "0.1.0",
+  "description": "Tracks active website usage and forwards events to local LockIn collector.",
+  "permissions": [
+    "tabs",
+    "windows",
+    "idle",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:4317/*",
+    "http://localhost:4317/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

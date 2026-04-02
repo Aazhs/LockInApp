@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LockIn Live Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="/dashboard/favicon.svg" />
+    <link rel="stylesheet" href="/dashboard/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <header class="app-header">
+      <p class="app-kicker">LockIn</p>
+      <h1 class="app-title">Focus Analytics Dashboard</h1>
+    </header>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">LockIn Analytics</p>
+        <h2>Realtime Focus Dashboard</h2>
+        <p class="subtitle" id="status-text">Connecting to collector...</p>
+        <p class="day-window-text" id="day-window-text">Usage day window: 6:00 AM to 2:00 AM</p>
+      </div>
+      <div class="controls">
+        <div class="day-nav" role="group" aria-label="Change usage day">
+          <button id="prev-day-btn" class="ghost-btn" type="button">Prev Day</button>
+          <button id="today-btn" class="ghost-btn" type="button">Today</button>
+          <button id="next-day-btn" class="ghost-btn" type="button">Next Day</button>
+        </div>
+        <label>
+          Usage Day
+          <input id="date-input" type="date" />
+        </label>
+        <button id="theme-toggle-btn" class="ghost-btn" type="button">Dark Mode</button>
+        <button id="refresh-btn" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="stats-grid">
+        <article class="stat-card">
+          <p>Active Time</p>
+          <h2 id="stat-active">0m</h2>
+        </article>
+        <article class="stat-card">
+          <p>Sessions</p>
+          <h2 id="stat-sessions">0</h2>
+        </article>
+        <article class="stat-card">
+          <p>Unique Domains</p>
+          <h2 id="stat-domains">0</h2>
+        </article>
+        <article class="stat-card">
+          <p>Unique URLs</p>
+          <h2 id="stat-urls">0</h2>
+        </article>
+      </section>
+
+      <section class="panel panel-wide day-history-panel">
+        <div class="panel-head">
+          <h3>Daily Usage</h3>
+          <span>6:00 AM to 2:00 AM</span>
+        </div>
+        <div id="history-days" class="history-days"></div>
+      </section>
+
+      <section class="panel panel-wide quality-panel">
+        <div class="panel-head">
+          <h3>Focus Quality</h3>
+          <span id="quality-model">gemini · gemini-1.5-flash</span>
+        </div>
+        <div class="quality-grid">
+          <div class="quality-score-wrap">
+            <div id="quality-score-ring" class="quality-score-ring" role="img" aria-label="Focus score 50 out of 100">
+              <strong id="quality-score">50</strong>
+              <span>/100</span>
+            </div>
+            <p id="quality-verdict" class="quality-verdict">Mixed usage</p>
+          </div>
+          <div class="quality-bars">
+            <div class="quality-row">
+              <div class="quality-label">
+                <span>Good</span>
+                <span id="quality-good-value">0%</span>
+              </div>
+              <div class="quality-track"><div id="quality-good-bar" class="quality-fill good"></div></div>
+            </div>
+            <div class="quality-row">
+              <div class="quality-label">
+                <span>Neutral</span>
+                <span id="quality-neutral-value">0%</span>
+              </div>
+              <div class="quality-track"><div id="quality-neutral-bar" class="quality-fill neutral"></div></div>
+            </div>
+            <div class="quality-row">
+              <div class="quality-label">
+                <span>Waste</span>
+                <span id="quality-waste-value">0%</span>
+              </div>
+              <div class="quality-track"><div id="quality-waste-bar" class="quality-fill waste"></div></div>
+            </div>
+          </div>
+          <div class="quality-lists">
+            <div>
+              <h4>Top Good Domains</h4>
+              <div id="quality-good-domains" class="quality-domain-list"></div>
+            </div>
+            <div>
+              <h4>Top Waste Domains</h4>
+              <div id="quality-waste-domains" class="quality-domain-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-wide manual-panel">
+        <div class="panel-head">
+          <h3>Manual Classification</h3>
+          <span>Non-YouTube sites</span>
+        </div>
+        <p class="manual-note">
+          Policy: YouTube uses AI per video (Gemini/OpenAI by provider). X/Twitter and Reddit are always BAD.
+        </p>
+        <div class="manual-controls">
+          <label>
+            Domain
+            <input id="manual-domain-input" type="text" placeholder="e.g. udemy.com or medium.com" />
+          </label>
+          <label>
+            Label
+            <select id="manual-label-select">
+              <option value="good">Good</option>
+              <option value="neutral">Neutral</option>
+              <option value="waste">Waste</option>
+            </select>
+          </label>
+          <button id="manual-save-btn" type="button">Save Label</button>
+          <button id="manual-delete-btn" class="ghost-btn" type="button">Delete Label</button>
+        </div>
+        <p id="manual-status" class="manual-status"></p>
+        <div class="manual-grid">
+          <div>
+            <h4>Pending Manual Domains</h4>
+            <div id="manual-pending-list" class="manual-list"></div>
+          </div>
+          <div>
+            <h4>Active Manual Labels</h4>
+            <div id="manual-active-list" class="manual-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-wide">
+        <div class="panel-head">
+          <h3>Focus Timeline</h3>
+          <span id="timeline-total">0m today</span>
+        </div>
+        <div class="timeline-wrap">
+          <svg id="timeline-svg" viewBox="0 0 960 220" preserveAspectRatio="none"></svg>
+          <div id="timeline-x" class="timeline-x"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>Browser Share</h3>
+          <span id="browser-total">0m</span>
+        </div>
+        <div class="browser-section">
+          <div id="donut" class="donut"></div>
+          <div id="browser-list" class="browser-list"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>Top Domains</h3>
+          <span id="domains-total">0 tracked</span>
+        </div>
+        <div id="domain-bars" class="domain-bars"></div>
+      </section>
+
+      <section class="panel panel-wide">
+        <div class="panel-head">
+          <h3>Recent Events</h3>
+          <div class="panel-actions">
+            <label class="compact-label">
+              Rows
+              <select id="recent-limit-select">
+                <option value="120">120</option>
+                <option value="300">300</option>
+                <option value="1000">1000</option>
+                <option value="5000">All Day</option>
+              </select>
+            </label>
+            <button id="recent-expand-btn" class="ghost-btn" type="button">Expand</button>
+            <span id="updated-at">Never</span>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Last Seen</th>
+                <th>Domain</th>
+                <th>Title</th>
+                <th>Browser</th>
+                <th>Class</th>
+                <th>Sessions</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody id="events-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="/dashboard/app.js"></script>
+  </body>
+</html>

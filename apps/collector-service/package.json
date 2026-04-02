@@ -1,0 +1,29 @@
+{
+  "name": "@lockin/collector-service",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "summarize": "npm run build && node dist/cli.js summarize",
+    "schedule": "npm run build && node dist/cli.js schedule",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lockin/shared": "*",
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^8.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/nodemailer": "^7.0.11"
+  }
+}
