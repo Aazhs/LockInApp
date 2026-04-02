@@ -8,4 +8,5 @@ coverage
 *.sqlite-wal
 
 .lockin-email-scheduler.json
+.env.example
 
